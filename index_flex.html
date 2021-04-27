@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Flex</title>
+
+    <style>
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.flex-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        }
+        .flex-item-1 {
+            width: 100%;
+            background-color: silver;
+        }
+        .flex-item-2, .flex-item-3 {
+            width: 50%;
+        }
+        .flex-item-2 {
+            background-color: thistle;
+        }
+        .flex-item-3 {
+            background-color: brown;
+        }
+        .flex-item-4 {
+            width: 70%;
+            background-color: chartreuse;
+        }
+        .flex-item-5 {
+            width: 30%;
+            background-color: darkgoldenrod;
+        }
+        .flex-item-6, .flex-item-7, .flex-item-8 {
+            width: 33.33%;
+        }
+
+        p {
+            color: darkorange;
+            font-size: 28px;
+        }
+
+        [class*="flex-item"] {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }
+
+        @media all and (max-width: 720px) {
+            
+            .flex-container {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-flow: column wrap;
+                        flex-flow: column wrap;
+            }
+            [class*="flex-item"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <h1>Index Flex pavyzdys</h1>
+        <div class='flex-container'>
+            <div class='flex-item-1'><p>1</p></div>
+            <div class='flex-item-2'><p>2</p></div>
+            <div class='flex-item-3'><p>3</p></div>
+            <div class='flex-item-4'><p>4</p></div>
+            <div class='flex-item-5'><p>5</p></div>
+            <div class='flex-item-6'><p>6</p></div>
+            <div class='flex-item-7'><p>7</p></div>
+            <div class='flex-item-8'><p>8</p></div>
+        </div>
+    </div>
+</body>
+</html>
