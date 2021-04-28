@@ -71,7 +71,7 @@ img {
     1px 0 0 0 red, 
     0 1px 0 0 red, 
     1px 1px 0 0 red,
-    1px 0 0 0 red inset, 
+    1px 0 0 0 rgb(255, 0, 0) inset, 
     0 1px 0 0 red inset;
 }
 
